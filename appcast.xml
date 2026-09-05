@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
     <channel>
         <!--
             The update feed RGMP reads.
@@ -16,22 +17,5 @@
         <link>https://gewisser.github.io/RGMP-releases/appcast.xml</link>
         <description>Updates for RGMP, a music player for macOS.</description>
         <language>en</language>
-        <item>
-            <title>Version 1.5</title>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>1.5</sparkle:shortVersionString>
-            <pubDate>Sun, 06 Sep 2026 00:02:18 +0300</pubDate>
-            <description xml:lang="en" sparkle:format="markdown">- The player checks for a new version on its own and offers to update
-- Release notes now come in the language the player speaks</description>
-            <description xml:lang="de" sparkle:format="markdown">- Der Player sucht selbst nach einer neuen Version und bietet das Update an
-- Die Versionshinweise erscheinen jetzt in der Sprache des Players</description>
-            <description xml:lang="fr" sparkle:format="markdown">- Le lecteur cherche lui-meme une nouvelle version et propose la mise a jour
-- Les notes de version sont maintenant dans la langue du lecteur</description>
-            <description xml:lang="ja" sparkle:format="markdown">- プレーヤーが自分で新しいバージョンを確認し、更新を提案します
-- リリースノートはプレーヤーの言語で表示されます</description>
-            <description xml:lang="ru" sparkle:format="markdown">- Плеер сам проверяет, не вышла ли новая версия, и предлагает обновиться
-- Заметки к выпуску теперь на языке, на котором говорит плеер</description>
-            <enclosure url="https://github.com/gewisser/RGMP-releases/releases/download/v1.5/RGMP-1.5.zip" length="8192761" type="application/octet-stream" sparkle:edSignature="+aC3VmfupZVwDupjXdP4Ja/dvlGBdBWWB5YKPuuWR7Y/uG3l7kUagblLnjJU4HNd72QHzkMUmMaRppkQQQ60BQ==" />
-        </item>
     </channel>
 </rss>
