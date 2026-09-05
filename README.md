@@ -5,9 +5,12 @@ source code here.
 
 ## Getting it
 
-Take the `.dmg` from [Releases](https://github.com/gewisser/RGMP-releases/releases) and drag RGMP
-into your Applications folder. The `.zip` next to it is what an installed copy downloads when it
-updates itself, so there is no reason to take that one by hand.
+1. Download the `.dmg` from [Releases](https://github.com/gewisser/RGMP-releases/releases).
+2. Double-click it. A window opens with RGMP in it, next to your Applications folder.
+3. Drag RGMP across, then eject the disk image.
+
+The `.zip` next to the image is what an installed copy downloads when it updates itself, so there
+is no reason to take that one by hand.
 
 macOS 26 or newer. Universal build: Apple Silicon and Intel.
 
