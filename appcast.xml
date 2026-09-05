@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <!--
+            The update feed RGMP reads.
+
+            One <item> per published release, newest first. An item with no <sparkle:channel>
+            is a released version and reaches everybody; one carrying
+            <sparkle:channel>beta</sparkle:channel> reaches only the copies that have asked
+            for test versions in their settings.
+
+            Written by the release script. Editing it by hand means recomputing the signature
+            and the byte count of the archive, which is what that script is for.
+        -->
+        <title>RGMP</title>
+        <link>https://gewisser.github.io/RGMP-releases/appcast.xml</link>
+        <description>Updates for RGMP, a music player for macOS.</description>
+        <language>en</language>
+    </channel>
+</rss>
