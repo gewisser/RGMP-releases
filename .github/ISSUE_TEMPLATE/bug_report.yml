@@ -1,0 +1,71 @@
+name: Bug report
+description: Something in RGMP does not work the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. The more precisely it can be reproduced, the sooner it gets fixed.
+
+        The version, the Mac and the macOS line are all in the About RGMP window (the first item of the RGMP menu), and they can be selected and copied from there.
+  - type: input
+    id: version
+    attributes:
+      label: RGMP version
+      description: As the About RGMP window shows it, at the top right.
+      placeholder: "1.5 (3)"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      description: The grey line on the right of the About RGMP window.
+      placeholder: "macOS 26.0.1 (25A354)"
+    validations:
+      required: true
+  - type: dropdown
+    id: mac
+    attributes:
+      label: Mac
+      options:
+        - Apple Silicon
+        - Intel
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: What you saw, or heard, or did not hear.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: From launching RGMP to the problem. If it only happens with one file or one station, say what format it is.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: |
+        Drag the log file here. It is at `~/Library/Application Support/gewisser.rgmp/Logs/RGMP.log` (in Finder: Go -> Go to Folder, then paste the path).
+        It may contain the names of files you played, so look through it first if that matters to you.
+  - type: textarea
+    id: other
+    attributes:
+      label: Anything else
+      description: Screenshots, a sample file, anything that seems related.

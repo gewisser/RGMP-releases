@@ -1,0 +1,16 @@
+name: Question
+description: Not sure how something works, or whether it is a bug.
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: RGMP version
+      description: As the About RGMP window shows it. Leave it empty if it does not matter.
+      placeholder: "1.5 (3)"

@@ -41,3 +41,12 @@ this build was published with.
 
 Test versions go to a channel of their own. They are off by default, and the same settings pane is
 where you turn them on.
+
+## Reporting a problem
+
+Open an [issue](https://github.com/gewisser/RGMP-releases/issues/new/choose) and pick the form that
+fits. The About RGMP window, the first item of the RGMP menu, shows the version, the Mac and the
+macOS line a bug report asks for, and they can be copied from there.
+
+The log is at `~/Library/Application Support/gewisser.rgmp/Logs/RGMP.log`. Attaching it to a bug
+report usually saves a round of questions.

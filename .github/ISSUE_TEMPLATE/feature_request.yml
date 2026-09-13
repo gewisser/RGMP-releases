@@ -1,0 +1,22 @@
+name: Feature request
+description: Something RGMP does not do yet and should.
+labels: ["feature"]
+body:
+  - type: textarea
+    id: missing
+    attributes:
+      label: What is missing
+      description: What you are trying to do, and where RGMP gets in the way.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would like
+      description: How you picture it working. A sketch or a screenshot helps.
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: Anything else
