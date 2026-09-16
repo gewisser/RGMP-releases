@@ -31,16 +31,18 @@ xattr -dr com.apple.quarantine /Applications/RGMP.app
 
 ## Updating
 
-RGMP checks this repository for a new version once a day, and you can ask it to check at any time:
-"Check for Updates..." in the application menu, or the Updates pane in its settings.
+The second time RGMP is opened, it asks whether it may check for new versions by itself. If you
+agree, it checks this repository once a day. You can also ask it to check at any time: "Check for
+Updates..." in the application menu, or the Updates pane in its settings.
 
 Every update is verified against a signing key built into the copy you already have, so an archive
 that has been altered on the way will not install. That check is not Apple's, and it does not make
 the build notarized; what it does mean is that an update can only come from whoever holds the key
 this build was published with.
 
-Test versions go to a channel of their own. They are off by default, and the same settings pane is
-where you turn them on.
+Test versions go to a channel of their own. A copy installed from a test version is offered the
+test versions that follow as well; any other copy only gets released versions. "Update to" in the
+same settings pane switches between the two.
 
 ## Reporting a problem
 
