@@ -19,9 +19,12 @@ macOS 26 or newer. Universal build: Apple Silicon and Intel.
 RGMP is ad-hoc signed and is **not** notarized, so macOS refuses to open it the first time. That is
 expected, and it happens once:
 
-1. Double-click RGMP and dismiss the warning.
-2. System Settings -> Privacy & Security -> "Open Anyway".
-3. Confirm, and open RGMP again.
+1. Double-click RGMP. macOS shows a window saying "RGMP.app Not Opened", with two buttons. Click
+   "Done". The blue "Move to Trash" is the default button: Return presses it, and RGMP goes to the
+   Trash.
+2. System Settings -> Privacy & Security, the Security section -> "Open Anyway". The button stays
+   there for about an hour after the attempt to open RGMP.
+3. Confirm with your account password. If macOS asks "Open RGMP.app?", click "Open".
 
 The same thing in one Terminal command:
 
