@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"
-     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <!--
             The update feed RGMP reads.
@@ -17,5 +16,51 @@
         <link>https://gewisser.github.io/RGMP-releases/appcast.xml</link>
         <description>Updates for RGMP, a music player for macOS.</description>
         <language>en</language>
+        <item>
+            <title>Version 1.6</title>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+            <sparkle:channel>beta</sparkle:channel>
+            <pubDate>Sat, 19 Sep 2026 20:49:50 +0300</pubDate>
+            <description xml:lang="en" sparkle:format="markdown">The first public beta.
+
+What is already in it: playlists with tabs and grouping, a twenty-band equalizer, sound effects,
+speed, tempo and pitch, volume normalization, tag writing, internet radio with recording, a mini
+player, global shortcuts and Control Centre. The interface is in five languages.
+
+This is a test version. A copy installed from it is offered the test versions that follow.</description>
+            <description xml:lang="de" sparkle:format="markdown">Die erste öffentliche Beta.
+
+Was schon drin ist: Wiedergabelisten mit Tabs und Gruppierung, ein Equalizer mit zwanzig Bändern,
+Klangeffekte, Geschwindigkeit, Tempo und Tonhöhe, Lautstärkenormalisierung, das Schreiben von
+Tags, Internetradio mit Aufnahme, ein Mini-Player, globale Kurzbefehle und das Kontrollzentrum.
+Die Oberfläche gibt es in fünf Sprachen.
+
+Das ist eine Testversion. Eine daraus installierte Kopie bekommt auch die folgenden Testversionen
+angeboten.</description>
+            <description xml:lang="fr" sparkle:format="markdown">La première bêta publique.
+
+Ce qui est déjà là : listes de lecture avec onglets et groupement, un égaliseur à vingt bandes,
+effets sonores, vitesse, tempo et hauteur, normalisation du volume, écriture des étiquettes, radio
+Internet avec enregistrement, un mini-lecteur, raccourcis globaux et Centre de contrôle.
+L'interface est en cinq langues.
+
+C'est une version de test. Une copie installée à partir de celle-ci recevra aussi les versions de
+test suivantes.</description>
+            <description xml:lang="ja" sparkle:format="markdown">初めての公開ベータ版です。
+
+入っているもの: タブとグループ化に対応したプレイリスト、20バンドのイコライザ、サウンドエフェクト、速度・テンポ・ピッチ、音量のノーマライズ、タグの書き込み、録音できるインターネットラジオ、ミニプレーヤー、グローバルショートカット、コントロールセンター。インターフェースは5言語あります。
+
+これはテスト版です。ここからインストールしたコピーには、次のテスト版も届きます。</description>
+            <description xml:lang="ru" sparkle:format="markdown">Первая публичная бета-версия.
+
+Что уже есть: плейлисты со вкладками и группировкой, эквалайзер на двадцать полос, звуковые
+эффекты, скорость, темп и тональность, нормализация громкости, запись тегов, интернет-радио с
+записью эфира, мини-плеер, глобальные горячие клавиши и Пункт управления. Интерфейс на пяти
+языках.
+
+Это тестовая версия. Копия, поставленная из неё, будет получать следующие тестовые версии.</description>
+            <enclosure url="https://github.com/gewisser/RGMP-releases/releases/download/v1.6/RGMP-1.6.zip" length="9960872" type="application/octet-stream" sparkle:edSignature="xsTdrpbtjt2Qoi33v5eIq3RMcVGRAKaouJWAHUJLsmojVjnnFXwhdybzRIJFjkheO33KH2r0g6vkVOO8wnkHBA==" />
+        </item>
     </channel>
 </rss>
