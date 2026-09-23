@@ -1,5 +1,9 @@
 # RGMP downloads
 
+<p align="center">
+  <img src="images/screenshot.png" alt="The RGMP window with a playlist, next to its settings open on the equalizer">
+</p>
+
 A music player for macOS. This repository carries the releases and the update feed; there is no
 source code here.
 
