@@ -17,6 +17,54 @@
         <description>Updates for RGMP, a music player for macOS.</description>
         <language>en</language>
         <item>
+            <title>Version 1.7</title>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
+            <sparkle:channel>beta</sparkle:channel>
+            <pubDate>Sun, 27 Sep 2026 14:22:00 +0300</pubDate>
+            <description xml:lang="en" sparkle:format="markdown">- fixed: changing the language a second time did not restart the player;
+- fixed: lower CPU load when effects are left at neutral;
+- added: **silence removal** at the edges of a track and inside it;
+- added: detection of real overloads while changing equalizer and effect settings;
+- added: File Information view and a **tag editor**;
+- added: radio recording with **re-encoding** into eight formats;
+- added: when recording a station, Ogg, Opus and FLAC are now split into files, like MP3;
+- other fixes and improvements.</description>
+            <description xml:lang="de" sparkle:format="markdown">- behoben: ein zweiter Sprachwechsel hat den Player nicht neu gestartet;
+- behoben: weniger CPU-Last, wenn Effekte in Neutralstellung sind;
+- neu: **Entfernen von Stille** am Anfang und Ende eines Titels und mittendrin;
+- neu: Erkennung echter Übersteuerung beim Ändern von Equalizer- und Effekteinstellungen;
+- neu: Dateiinformationen und ein **Tag-Editor**;
+- neu: Radioaufnahme mit **Umkodierung** in acht Formate;
+- neu: bei der Aufnahme eines Senders werden Ogg, Opus und FLAC jetzt wie MP3 in Dateien geteilt;
+- weitere Korrekturen und Verbesserungen.</description>
+            <description xml:lang="fr" sparkle:format="markdown">- corrigé : changer de langue une deuxième fois ne relançait pas le lecteur ;
+- corrigé : moins de charge processeur quand les effets sont au neutre ;
+- ajouté : **suppression du silence** en début et en fin de piste, et à l'intérieur ;
+- ajouté : détection des vraies saturations pendant le réglage de l'égaliseur et des effets ;
+- ajouté : Informations du fichier et un **éditeur de tags** ;
+- ajouté : enregistrement de la radio avec **réencodage** dans huit formats ;
+- ajouté : à l'enregistrement d'une station, Ogg, Opus et FLAC sont maintenant découpés en fichiers, comme le MP3 ;
+- autres corrections et améliorations.</description>
+            <description xml:lang="ja" sparkle:format="markdown">- 修正: 2 回目の言語切り替えでプレーヤーが再起動しなかった問題
+- 修正: エフェクトがニュートラルのときの CPU 負荷を軽減
+- 追加: トラックの先頭と末尾、途中の**無音の除去**
+- 追加: イコライザーやエフェクトの設定を変えたときの、実際の過大入力の検出
+- 追加: ファイル情報の表示と**タグエディタ**
+- 追加: 8 つの形式への**再エンコード**付きのラジオ録音
+- 追加: ラジオ録音で Ogg、Opus、FLAC も MP3 と同じようにファイルに分割されるように
+- その他の修正と改善</description>
+            <description xml:lang="ru" sparkle:format="markdown">- исправлено: смена языка повторно не запускала плейер;
+- исправлено: оптимизация нагрузки на процессор при эффектах, которые на нейтрале;
+- добавлено: функционал **удаления тишины** на краях трека и внутри трека;
+- добавлено: детект настоящих перегрузок при изменении настроек эквалайзера и эффектов;
+- добавлено: просмотр информации о файле и **редактор тэгов**;
+- добавлено: запись радиостанции с **перекодированием** в восемь форматов;
+- добавлено: при записи радиостанции Ogg, Opus и FLAC теперь режутся на файлы, как MP3;
+- прочие исправления и улучшения.</description>
+            <enclosure url="https://github.com/gewisser/RGMP-releases/releases/download/v1.7/RGMP-1.7.zip" length="11135924" type="application/octet-stream" sparkle:edSignature="NJF0nMgH0uXatzhtP66HR7pxH9Qr83FvOJCBjGh1X+2/reyLAZIJbduDCT94aA/dW6HG4c+3aOqo+WYRWKr4DA==" />
+        </item>
+        <item>
             <title>Version 1.6</title>
             <sparkle:version>4</sparkle:version>
             <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
