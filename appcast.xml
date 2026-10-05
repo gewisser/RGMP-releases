@@ -17,6 +17,94 @@
         <description>Updates for RGMP, a music player for macOS.</description>
         <language>en</language>
         <item>
+            <title>Version 1.8</title>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.8</sparkle:shortVersionString>
+            <sparkle:channel>beta</sparkle:channel>
+            <pubDate>Mon, 05 Oct 2026 19:45:33 +0300</pubDate>
+            <description xml:lang="en" sparkle:format="markdown">- fixed: the player crashed when connecting to a station if the User-Agent field in the radio settings had been cleared;
+- fixed: Cyrillic in stations. Names and tracks in Windows-1251 now read properly;
+- added: station information view + tags can now be saved for a station;
+- added: a menu on playlist tabs;
+- added: the next track is preloaded from the middle of the current one, but no later than a minute before its end, so the next file is already open in the background and the switch doesn't wait for the disk;
+- added: the greyed-out items of the buttons under the playlist came alive (actually implemented now);
+- added: icons in menu items: system symbols picked by what they mean on macOS, in every menu where the item appears and in the menu bar. Items without an icon line up with their neighbours' text;
+- added: the player introduces itself to stations with its current version. The default no longer gets stuck in the settings;
+- added: **[AudioUnit](https://en.wikipedia.org/wiki/Audio_Units) plugins**. An effects chain on the device's final mix - one instance of each, the sound goes through crossfading, and it survives a change of track, of device and a restart. "DSP Effects" is now just the chain, in the order you hear it, with the plugin windows;
+- added: **[VST® 3](https://en.wikipedia.org/wiki/Virtual_Studio_Technology) plugins** in the same chain as **AU**. Built on Steinberg's SDK 3.8.1, the host runs inside the player, its own plugin window (resizable if the plugin can do it), component and controller state survive a restart. `.vst3` files are read in a child copy of the player, with a cache and folder watching. "Add Effect" offers the AU twin first, "Install" takes `.vst3`. A VST3 crash takes the player down, but the next launch comes up with the culprit unloaded;
+- added: **our own plugin API**: one C header, `rgmp_plugin.h`, a plugin is an `.rgmpplugin` bundle inside the player's process and is never unloaded. "Plugins" is now the root of the settings tree, with five leaves plus a page for each plugin. "Install" and a double click take the quarantine off, a new plugin waits for its checkbox, one that crashed is unloaded on the next launch;
+- added: the first plugin - **Yandex Music**. What works: sign-in, links to a track, album and playlist, covers, importing "Liked" and your playlists.
+
+![VST Compatible](https://gewisser.github.io/RGMP-releases/images/vst-compatible.svg)
+
+VST is a registered trademark of Steinberg Media Technologies GmbH.</description>
+            <description xml:lang="de" sparkle:format="markdown">- behoben: der Player stürzte beim Verbinden mit einem Sender ab, wenn in den Radioeinstellungen das Feld User-Agent geleert war;
+- behoben: Kyrillisch bei Sendern. Namen und Titel in Windows-1251 werden jetzt richtig gelesen;
+- neu: Senderinformationen anzeigen + Tags für einen Sender speichern;
+- neu: ein Menü für die Tabs der Wiedergabeliste;
+- neu: der nächste Titel wird ab der Mitte des laufenden vorgeladen, spätestens aber eine Minute vor dem Ende, die nächste Datei ist also schon im Hintergrund geöffnet und der Übergang wartet nicht auf die Festplatte;
+- neu: die gesperrten Menüpunkte der Tasten unter der Wiedergabeliste funktionieren jetzt (endlich umgesetzt);
+- neu: Symbole an Menüpunkten: Systemsymbole, nach ihrer Bedeutung in macOS gewählt, in jedem Menü, in dem der Punkt vorkommt, und in der Menüleiste. Punkte ohne Symbol sind am Text ihrer Nachbarn ausgerichtet;
+- neu: der Player meldet sich bei Sendern mit seiner aktuellen Version. Der Standardwert bleibt nicht mehr in den Einstellungen hängen;
+- neu: **[AudioUnit](https://en.wikipedia.org/wiki/Audio_Units)-Plug-ins**. Eine Effektkette auf dem Endmix des Geräts - je eine Instanz, der Ton läuft durch die Überblendung, und die Kette übersteht Titelwechsel, Gerätewechsel und Neustart. "DSP-Effekte" ist jetzt nur noch die Kette, in Hörreihenfolge, mit den Plug-in-Fenstern;
+- neu: **[VST® 3](https://en.wikipedia.org/wiki/Virtual_Studio_Technology)-Plug-ins** in derselben Kette wie **AU**. Auf Basis des Steinberg SDK 3.8.1 läuft der Host im Player-Prozess, eigenes Plug-in-Fenster (in der Größe veränderbar, wenn das Plug-in es kann), der Zustand von Komponente und Controller übersteht einen Neustart. `.vst3`-Dateien werden in einer Kindkopie des Players gelesen, mit Cache und Ordnerüberwachung. "Effekt hinzufügen" bietet zuerst den AU-Zwilling an, "Installieren" nimmt `.vst3` an. Stürzt ein VST3-Plug-in ab, reißt es den Player mit, aber der nächste Start kommt mit dem Verursacher entladen hoch;
+- neu: **eine eigene Plug-in-API**: ein C-Header, `rgmp_plugin.h`, ein Plug-in ist ein `.rgmpplugin`-Bundle im Player-Prozess und wird nie entladen. "Plug-ins" ist jetzt die Wurzel des Einstellungsbaums, mit fünf Blättern und einer Seite für jedes Plug-in. "Installieren" und ein Doppelklick entfernen die Quarantäne, ein neues Plug-in wartet auf sein Häkchen, ein abgestürztes wird beim nächsten Start entladen;
+- neu: das erste Plug-in - **Yandex Music**. Fertig sind: Anmeldung, Links zu Titel, Album und Wiedergabeliste, Cover, Import von "Liked" und den eigenen Wiedergabelisten.
+
+![VST Compatible](https://gewisser.github.io/RGMP-releases/images/vst-compatible.svg)
+
+VST is a registered trademark of Steinberg Media Technologies GmbH.</description>
+            <description xml:lang="fr" sparkle:format="markdown">- corrigé : le lecteur plantait à la connexion à une station si le champ User-Agent avait été vidé dans les réglages de la radio ;
+- corrigé : le cyrillique des stations. Les noms et les titres en Windows-1251 se lisent maintenant correctement ;
+- ajouté : affichage des informations d'une station + possibilité d'enregistrer des tags pour une station ;
+- ajouté : un menu pour les onglets de liste de lecture ;
+- ajouté : préchargement du morceau suivant à partir du milieu du morceau en cours, mais au plus tard une minute avant la fin, donc le fichier suivant est déjà ouvert en arrière-plan et l'enchaînement n'attend pas le disque ;
+- ajouté : les éléments grisés des boutons sous la liste de lecture fonctionnent enfin (vraiment implémentés) ;
+- ajouté : des icônes sur les éléments de menu : des symboles système choisis selon leur sens dans macOS, dans chaque menu où l'élément apparaît et dans la barre des menus. Les éléments sans icône sont alignés sur le texte de leurs voisins ;
+- ajouté : le lecteur se présente aux stations avec sa version actuelle. La valeur par défaut ne reste plus bloquée dans les réglages ;
+- ajouté : **plug-ins [AudioUnit](https://en.wikipedia.org/wiki/Audio_Units)**. Une chaîne d'effets sur le mix final de l'appareil - une instance de chacun, le son passe par le fondu enchaîné, et la chaîne survit à un changement de morceau, d'appareil et à un redémarrage. "Effets DSP" n'est plus que la chaîne, dans l'ordre d'écoute, avec les fenêtres des plug-ins ;
+- ajouté : **plug-ins [VST® 3](https://en.wikipedia.org/wiki/Virtual_Studio_Technology)** dans la même chaîne que les **AU**. Basé sur le SDK Steinberg 3.8.1, l'hôte tourne dans le processus du lecteur, une fenêtre de plug-in à lui (redimensionnable si le plug-in le permet), l'état du composant et du contrôleur survit à un redémarrage. Les `.vst3` sont lus dans une copie enfant du lecteur, avec un cache et la surveillance des dossiers. "Ajouter un effet" propose d'abord le jumeau AU, "Installer" accepte les `.vst3`. Un plantage VST3 fait tomber le lecteur, mais le lancement suivant repart avec le fautif déchargé ;
+- ajouté : **notre propre API de plug-ins** : un seul en-tête C, `rgmp_plugin.h`, un plug-in est un bundle `.rgmpplugin` dans le processus du lecteur, jamais déchargé. "Plug-ins" devient la racine de l'arbre des réglages, avec cinq feuilles et une page pour chaque plug-in. "Installer" et un double-clic retirent la quarantaine, un nouveau plug-in attend sa case cochée, celui qui a planté est déchargé au lancement suivant ;
+- ajouté : le premier plug-in - **Yandex Music**. Ce qui marche : connexion, liens vers un morceau, un album et une liste de lecture, pochettes, import de "Liked" et de vos listes de lecture.
+
+![VST Compatible](https://gewisser.github.io/RGMP-releases/images/vst-compatible.svg)
+
+VST is a registered trademark of Steinberg Media Technologies GmbH.</description>
+            <description xml:lang="ja" sparkle:format="markdown">- 修正: ラジオ設定で User-Agent 欄を空にしていると、局への接続時にプレーヤーが落ちていた問題
+- 修正: 局のキリル文字。Windows-1251 の局名と曲名が正しく読めるように
+- 追加: ラジオ局の情報表示と、局ごとのタグ保存
+- 追加: プレイリストのタブのメニュー
+- 追加: 次のトラックの先読み。再生中のトラックの半分を過ぎたら、遅くとも終わりの 1 分前までに次のファイルをバックグラウンドで開いておくので、つなぎ目がディスクを待たない
+- 追加: プレイリストの下のボタンで使えなかった項目が、ちゃんと動くように (機能を実装)
+- 追加: メニュー項目のアイコン。macOS での意味に合わせたシステムシンボルを、その項目があるすべてのメニューとメニューバーに。アイコンのない項目は、隣の項目の文字に揃えて配置
+- 追加: プレーヤーが現在のバージョンで局に名乗るように。既定値が設定に残り続けることはもうない
+- 追加: **[AudioUnit](https://en.wikipedia.org/wiki/Audio_Units) プラグイン**。デバイスの最終ミックスにかかるエフェクトチェーンで、各エフェクトは 1 インスタンスずつ。音はクロスフェードを通り、トラックの切り替え、デバイスの切り替え、再起動のあとも保たれる。"DSPエフェクト" はチェーンだけになり、聞こえる順に並び、プラグインのウインドウを開ける
+- 追加: **AU** と同じチェーンで使える **[VST® 3](https://en.wikipedia.org/wiki/Virtual_Studio_Technology) プラグイン**。Steinberg SDK 3.8.1 ベース、ホストはプレーヤーのプロセス内、独自のプラグインウインドウ (プラグインが対応していればサイズ変更可)、コンポーネントとコントローラの状態は再起動後も保持。`.vst3` はプレーヤーの子コピーで読み込み、キャッシュとフォルダの監視つき。"エフェクトを追加" は AU 版を先に勧め、"インストール" は `.vst3` を受け付ける。VST3 がクラッシュするとプレーヤーも落ちるが、次の起動では原因のプラグインを外した状態で立ち上がる
+- 追加: **独自のプラグイン API**。C ヘッダー `rgmp_plugin.h` ひとつで、プラグインは `.rgmpplugin` バンドルとしてプレーヤーのプロセス内で動き、アンロードされない。"プラグイン" が設定ツリーのルートになり、5 つの項目とプラグインごとのページが並ぶ。"インストール" とダブルクリックで検疫属性を外し、新しいプラグインはチェックを入れるまで待機、クラッシュしたプラグインは次の起動でアンロード
+- 追加: 最初のプラグインは **Yandex Music**。ログイン、トラック・アルバム・プレイリストへのリンク、カバー、"Liked" とプレイリストのインポートに対応
+
+![VST Compatible](https://gewisser.github.io/RGMP-releases/images/vst-compatible.svg)
+
+VST is a registered trademark of Steinberg Media Technologies GmbH.</description>
+            <description xml:lang="ru" sparkle:format="markdown">- исправлено: плейер падал при подключении к радиостанции, если в настройках радио было очищено поле User-Agent;
+- исправлено: кириллица станций. Имя и треки в Windows-1251 теперь читаются;
+- добавлено: отображение информации по радиостанции + возможность сохранить теги для радиостанции;
+- добавлено: меню вкладки плейлиста;
+- добавлено: предзагрузка следующего трека с середины трека, но не позже чем за минуту до конца, следующий файл открыт заранее, в фоне, и стык не ждёт диска;
+- добавлено: заблокированные пункты кнопок футера ожили (реализован функционал);
+- добавлено: иконки у пунктов меню: системные символы по смыслу macOS, во всех меню, где пункт висит, и в строке меню. Пункты без иконки выровнены по тексту с соседями;
+- добавлено: плеер представляется станциям своей текущей версией. Значение по умолчанию больше не застревает в настройках;
+- добавлено: **плагины [AudioUnit](https://en.wikipedia.org/wiki/Audio_Units)**. Цепочка эффектов на итоговом миксе устройства - по одному экземпляру, звук идёт через сведение, переживает смену трека, устройства и перезапуск. "DSP-эффекты" - только цепочка, по порядку звучания, с окнами плагинов;
+- добавлено: **плагины [VST® 3](https://en.wikipedia.org/wiki/Virtual_Studio_Technology)** в той же цепочке, что и **AU**. На SDK Steinberg 3.8.1, хост в процессе плеера, своё окно плагина (тянется, если плагин умеет), состояние компонента и контроллера переживает перезапуск. `.vst3` читаются в дочерней копии плеера, с кэшем и слежением за папками. "Добавить эффект" предлагает близнеца-AU первым, "Установить" принимает `.vst3`. Падение VST3 роняет плеер, но следующий запуск приходит с виновником выгруженным;
+- добавлено: **свой API плагинов**: один C-заголовок `rgmp_plugin.h`, плагин - бандл `.rgmpplugin` в процессе плеера, никогда не выгружается. "Плагины" стали корнем дерева настроек с пятью листами и листом страницы каждого плагина. "Установить" и двойной щелчок снимают карантин, новый плагин ждёт галочки, упавший выгружается при следующем запуске;
+- добавлено: первый плагин - **Яндекс Музыка**. Сделан функционал: вход, ссылки на трек, альбом и плейлист, обложки, импорт "Мне нравится" и плейлистов.
+
+![VST Compatible](https://gewisser.github.io/RGMP-releases/images/vst-compatible.svg)
+
+VST is a registered trademark of Steinberg Media Technologies GmbH.</description>
+            <enclosure url="https://github.com/gewisser/RGMP-releases/releases/download/v1.8/RGMP-1.8.zip" length="13081310" type="application/octet-stream" sparkle:edSignature="kRupJNaogiko2KibgvNveWe4dxf6iEBShxxyKI18itD//ZelxsMD9+VdG4mKVj38poDYQbUEbe43psp+JwnOCA==" />
+        </item>
+        <item>
             <title>Version 1.7</title>
             <sparkle:version>5</sparkle:version>
             <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
