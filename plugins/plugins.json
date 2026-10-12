@@ -2,6 +2,29 @@
   "about": "The plugin feed RGMP reads. Written by the publishing script, never by hand: every version stays, and a player takes the newest one it can run.",
   "plugins": [
     {
+      "id": "gewisser.rgmp.scrobbler",
+      "version": "1.0",
+      "minPlayer": "1.9",
+      "url": "https://gewisser.github.io/RGMP-releases/plugins/Scrobbler-1.0.zip",
+      "length": 275398,
+      "edSignature": "P8X3q8IUx/JsHSfxPemphcMjufzms7J4dr8hr8dJh3VdmYT0saJRfTN6ZdStLNCCiK/cD5AF54MkapPBXDKTBQ==",
+      "name": {
+        "de": "Scrobbler",
+        "en": "Scrobbler",
+        "fr": "Scrobbler",
+        "ja": "スクロブラー",
+        "ru": "Скробблер"
+      },
+      "vendor": "RGMP",
+      "summary": {
+        "de": "Sendet gehörte Titel an Last.fm und ListenBrainz",
+        "en": "Sends the tracks you listen to to Last.fm and ListenBrainz",
+        "fr": "Envoie les titres écoutés à Last.fm et ListenBrainz",
+        "ja": "聴いた曲を Last.fm と ListenBrainz に送信します",
+        "ru": "Отправляет прослушанные треки в Last.fm и ListenBrainz"
+      }
+    },
+    {
       "id": "gewisser.rgmp.yandexmusic",
       "version": "1.4",
       "minPlayer": "1.9",
