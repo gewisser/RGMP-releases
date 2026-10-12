@@ -1,0 +1,28 @@
+{
+  "about": "The plugin feed RGMP reads. Written by the publishing script, never by hand: every version stays, and a player takes the newest one it can run.",
+  "plugins": [
+    {
+      "id": "gewisser.rgmp.youtube",
+      "version": "1.1",
+      "minPlayer": "1.9",
+      "url": "https://gewisser.github.io/RGMP-releases/plugins/YouTube-1.1.zip",
+      "length": 245411,
+      "edSignature": "91GgK7jeylgmU/ZUE1mTEPIxm8JRRLfdVahHyUY6KMAhcjaom9+QFFxsPQqyuXyqSKhfBLhI57qqVwA0XWS7Dg==",
+      "name": {
+        "de": "YouTube Support",
+        "en": "YouTube Support",
+        "fr": "YouTube Support",
+        "ja": "YouTube Support",
+        "ru": "YouTube Support"
+      },
+      "vendor": "RGMP",
+      "summary": {
+        "de": "YouTube-Videos, Playlists und Kanäle per Link - mit Covern und neuen Videos, sobald sie erscheinen",
+        "en": "YouTube videos, playlists and channels by link - with covers, and new videos as they come out",
+        "fr": "Vidéos, playlists et chaînes YouTube par lien - avec pochettes, et les nouvelles vidéos dès leur sortie",
+        "ja": "リンクからYouTubeの動画、プレイリスト、チャンネルを - カバー付きで、新しい動画も公開され次第",
+        "ru": "Видео, плейлисты и каналы YouTube по ссылке - с обложками и новыми видео, как только они выходят"
+      }
+    }
+  ]
+}
