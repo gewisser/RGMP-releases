@@ -26,6 +26,29 @@
     },
     {
       "id": "gewisser.rgmp.yandexmusic",
+      "version": "1.5",
+      "minPlayer": "1.9",
+      "url": "https://gewisser.github.io/RGMP-releases/plugins/YandexMusic-1.5.zip",
+      "length": 208609,
+      "edSignature": "EnkwCD/SoBr9XH01WtjmiKZb4u+aszWQnEUV4LCuz14RGTcNngjM7lENIBNzUzd9CqXJhIhAWl9biznYSlOYBg==",
+      "name": {
+        "de": "Yandex Music",
+        "en": "Yandex Music",
+        "fr": "Yandex Music",
+        "ja": "Yandex Music",
+        "ru": "Яндекс Музыка"
+      },
+      "vendor": "RGMP",
+      "summary": {
+        "de": "Titel, Alben und Playlists von Yandex Music - per Link oder aus Ihrem Konto importiert",
+        "en": "Yandex Music tracks, albums and playlists - by link or imported from your account",
+        "fr": "Titres, albums et playlists de Yandex Music - par lien ou importés depuis votre compte",
+        "ja": "Yandex Musicの曲、アルバム、プレイリストを - リンクから、またはアカウントから読み込み",
+        "ru": "Треки, альбомы и плейлисты Яндекс Музыки - по ссылке или импортом из аккаунта"
+      }
+    },
+    {
+      "id": "gewisser.rgmp.yandexmusic",
       "version": "1.4",
       "minPlayer": "1.9",
       "url": "https://gewisser.github.io/RGMP-releases/plugins/YandexMusic-1.4.zip",
