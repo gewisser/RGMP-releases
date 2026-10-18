@@ -2,6 +2,29 @@
   "about": "The plugin feed RGMP reads. Written by the publishing script, never by hand: every version stays, and a player takes the newest one it can run.",
   "plugins": [
     {
+      "id": "gewisser.rgmp.projectm",
+      "version": "1.0",
+      "minPlayer": "1.10",
+      "url": "https://gewisser.github.io/RGMP-releases/plugins/ProjectM-1.0.zip",
+      "length": 7171625,
+      "edSignature": "VVU9OTY/JFbxHNKRUeWnn6Edd0Eb26sDZvNSV+geVchdgSPMWLymS+q+TGuZw87r+YNggzrikoufrWgJ1vRyAg==",
+      "name": {
+        "de": "projectM",
+        "en": "projectM",
+        "fr": "projectM",
+        "ja": "projectM",
+        "ru": "projectM"
+      },
+      "vendor": "RGMP",
+      "summary": {
+        "de": "Milkdrop-Visualisierung: Tausende Voreinstellungen im Visualisierungsfenster",
+        "en": "Milkdrop visualization: thousands of presets in the Visualization window",
+        "fr": "Visualisation Milkdrop : des milliers de préréglages dans la fenêtre de visualisation",
+        "ja": "Milkdropビジュアライザー: ビジュアライザーのウインドウで数千のプリセット",
+        "ru": "Визуализация Milkdrop: тысячи пресетов в окне визуализации"
+      }
+    },
+    {
       "id": "gewisser.rgmp.scrobbler",
       "version": "1.0",
       "minPlayer": "1.9",
