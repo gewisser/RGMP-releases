@@ -1,8 +1,9 @@
 # Plugins
 
-Every plugin on this page needs RGMP 1.9 or newer. RGMP 1.9 lists them under Settings -> Plugins ->
-Add-ons and installs them with one button, and once a plugin is installed, it offers the next
-version by itself at its update check. So nothing here has to be downloaded by hand any more.
+Every plugin on this page needs RGMP 1.9 or newer, and projectM needs 1.10. RGMP 1.9 lists them
+under Settings -> Plugins -> Add-ons and installs them with one button, and once a plugin is
+installed, it offers the next version by itself at its update check. So nothing here has to be
+downloaded by hand any more.
 
 To install one by hand anyway: Settings -> Plugins -> "Install", then pick the file. RGMP copies it
 where it belongs:
@@ -62,7 +63,7 @@ Two things to know:
 
 ## Yandex Music
 
-[YandexMusic-1.4.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/YandexMusic-1.4.zip)
+[YandexMusic-1.5.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/YandexMusic-1.5.zip)
 
 Tracks, albums and playlists from music.yandex.ru.
 
@@ -114,6 +115,36 @@ your page on the service.
 
 One thing to know: Last.fm doesn't take a listen older than 14 days, so one that waited longer than
 that is dropped. ListenBrainz takes it.
+
+## projectM
+
+[ProjectM-1.0.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/ProjectM-1.0.zip),
+needs RGMP 1.10
+
+A visualization for the player's Visualization window, built on
+[projectM](https://github.com/projectM-visualizer/projectm): close to ten thousand presets in
+eleven themes.
+
+Open the window with Window -> Visualization (Option+Cmd+V), a click on the cover, or the menu
+of the icon in the menu bar. The picker in the window's title bar switches between projectM and
+Spectrum, the one that comes with the player; if projectM isn't installed yet, the same picker
+installs it. Next to it are the preset's name, previous and next (the arrow keys do the same) and
+the list of presets with a search. Untick a theme in that list and its presets drop out of the
+automatic change.
+
+By default the preset changes every 30 seconds, with a 3 second transition, in random order. The
+plugin's page under Plugins changes all three.
+
+Two things to know:
+
+- The first time it starts, the plugin unpacks its presets. That takes a second or two, in the
+  background.
+- A few presets are heavy and draw only a handful of frames a second, whatever the size of the
+  window. Only the picture slows down, the music and the player don't. The next preset is one
+  click away.
+
+projectM is open source, under the LGPL 2.1. The plugin carries the library as a framework of its
+own, with its license and the version of its source inside.
 
 ![VST Compatible](../images/vst-compatible.svg)
 
