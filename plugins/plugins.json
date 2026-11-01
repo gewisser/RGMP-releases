@@ -2,6 +2,29 @@
   "about": "The plugin feed RGMP reads. Written by the publishing script, never by hand: every version stays, and a player takes the newest one it can run.",
   "plugins": [
     {
+      "id": "gewisser.rgmp.navidrome",
+      "version": "1.0",
+      "minPlayer": "2.3",
+      "url": "https://gewisser.github.io/RGMP-releases/plugins/Navidrome-1.0.zip",
+      "length": 785526,
+      "edSignature": "O8W+MEEWLb0yqg5aEYxPllVPNg7TlagCWQd7dxuDB3HPWeQam3iafLKTleO8ypsNxog+PYVeDSqowefMRWfXAA==",
+      "name": {
+        "de": "Navidrome",
+        "en": "Navidrome",
+        "fr": "Navidrome",
+        "ja": "Navidrome",
+        "ru": "Navidrome"
+      },
+      "vendor": "RGMP",
+      "summary": {
+        "de": "Spielt die Musik Ihrer eigenen Navidrome-Server",
+        "en": "Plays the music of your own Navidrome servers",
+        "fr": "Lit la musique de vos propres serveurs Navidrome",
+        "ja": "ご自身の Navidrome サーバーの音楽を再生します",
+        "ru": "Играет музыку с ваших серверов Navidrome"
+      }
+    },
+    {
       "id": "gewisser.rgmp.projectm",
       "version": "1.0",
       "minPlayer": "1.10",
