@@ -49,6 +49,29 @@
     },
     {
       "id": "gewisser.rgmp.scrobbler",
+      "version": "1.1",
+      "minPlayer": "1.9",
+      "url": "https://gewisser.github.io/RGMP-releases/plugins/Scrobbler-1.1.zip",
+      "length": 277025,
+      "edSignature": "WYgqZle7CIalA8cZIwzbBwIorBHLGqou9HHMEqbQpG9+QpQVz66m0O1k5eLKZuI/VjrdypxC2hUC85VbuzLzAw==",
+      "name": {
+        "de": "Scrobbler",
+        "en": "Scrobbler",
+        "fr": "Scrobbler",
+        "ja": "スクロブラー",
+        "ru": "Скробблер"
+      },
+      "vendor": "RGMP",
+      "summary": {
+        "de": "Sendet gehörte Titel an Last.fm und ListenBrainz",
+        "en": "Sends the tracks you listen to to Last.fm and ListenBrainz",
+        "fr": "Envoie les titres écoutés à Last.fm et ListenBrainz",
+        "ja": "聴いた曲を Last.fm と ListenBrainz に送信します",
+        "ru": "Отправляет прослушанные треки в Last.fm и ListenBrainz"
+      }
+    },
+    {
+      "id": "gewisser.rgmp.scrobbler",
       "version": "1.0",
       "minPlayer": "1.9",
       "url": "https://gewisser.github.io/RGMP-releases/plugins/Scrobbler-1.0.zip",
