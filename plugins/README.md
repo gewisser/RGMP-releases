@@ -1,9 +1,9 @@
 # Plugins
 
-Every plugin on this page needs RGMP 1.9 or newer, and projectM needs 1.10. RGMP 1.9 lists them
-under Settings -> Plugins -> Add-ons and installs them with one button, and once a plugin is
-installed, it offers the next version by itself at its update check. So nothing here has to be
-downloaded by hand any more.
+Every plugin on this page needs RGMP 1.9 or newer, projectM needs 1.10 and Navidrome 2.3. RGMP 1.9
+lists them under Settings -> Plugins -> Add-ons and installs them with one button, and once a
+plugin is installed, it offers the next version by itself at its update check. So nothing here has
+to be downloaded by hand any more.
 
 To install one by hand anyway: Settings -> Plugins -> "Install", then pick the file. RGMP copies it
 where it belongs:
@@ -95,7 +95,7 @@ Two things to know:
 
 ## Scrobbler
 
-[Scrobbler-1.0.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/Scrobbler-1.0.zip)
+[Scrobbler-1.1.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/Scrobbler-1.1.zip)
 
 Sends what you listen to to Last.fm, ListenBrainz or both.
 
@@ -107,7 +107,9 @@ While a track plays, your profile shows it as playing now; "Show what is playing
 turns that off. A track counts once half of it or four minutes have been heard, whichever comes
 first, and only if it is longer than 30 seconds. Seeking doesn't count, and at another speed it is
 the track's seconds that count, not the clock's. Files with artist and title tags are sent, and
-Yandex Music tracks. Radio and YouTube are not.
+Yandex Music and Navidrome tracks. Radio and YouTube are not, and neither is a Navidrome server
+that sends its listens on itself - there's a box for that on the Navidrome plugin's page, so a play
+isn't counted twice.
 
 With no connection, listens wait and go out by themselves once it is back, after a restart of the
 player too. The page says what went out last and what went wrong, and "Open profile" takes you to
@@ -115,6 +117,33 @@ your page on the service.
 
 One thing to know: Last.fm doesn't take a listen older than 14 days, so one that waited longer than
 that is dropped. ListenBrainz takes it.
+
+## Navidrome
+
+[Navidrome-1.0.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/Navidrome-1.0.zip),
+needs RGMP 2.3
+
+Your own [Navidrome](https://www.navidrome.org) server, 0.64.2 or newer, in ordinary playlists,
+mixed in with files.
+
+Its page under Plugins takes one server or several. For each one: the address the Navidrome web
+interface opens at, with the port and a path like `/music` if it has them, the user and the
+password. The password stays in the macOS Keychain and never goes over the network; each request
+carries a token made from it. A server at home with no HTTPS needs "Allow unencrypted HTTP".
+
+Then Window -> Library (Option+Cmd+L) shows the whole collection, grouped by artist, album, genre,
+playlists, folders and a few more, as a table, as cards or as album tiles, with a quick search. A
+track, an album or a whole branch goes into a playlist by dragging or from the menu. A link copied
+from the web interface can be pasted into a playlist as well.
+
+"Download" in the library's menu or a row's keeps an album, a playlist, an artist or one track on
+the Mac, and it plays with the server gone. A downloaded playlist follows the server: new tracks
+are fetched, removed ones deleted. "Download Quality" on the page picks the original file or a
+smaller one.
+
+Stars on Navidrome rows are the server's both ways, and "Add to Favourites" marks a track, its
+album or its artist; the library has a "Favourites" grouping for them. Listens go to the server
+too, and the ones heard offline go once it answers again.
 
 ## projectM
 
