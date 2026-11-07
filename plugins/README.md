@@ -120,8 +120,9 @@ that is dropped. ListenBrainz takes it.
 
 ## Navidrome
 
-[Navidrome-1.0.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/Navidrome-1.0.zip),
-needs RGMP 2.3
+[Navidrome-1.1.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/Navidrome-1.1.zip),
+needs RGMP 2.4. On RGMP 2.3 it's
+[Navidrome-1.0.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/Navidrome-1.0.zip).
 
 Your own [Navidrome](https://www.navidrome.org) server, 0.64.2 or newer, in ordinary playlists,
 mixed in with files.
@@ -144,6 +145,13 @@ smaller one.
 Stars on Navidrome rows are the server's both ways, and "Add to Favourites" marks a track, its
 album or its artist; the library has a "Favourites" grouping for them. Listens go to the server
 too, and the ones heard offline go once it answers again.
+
+New since 1.0: "Open in a Tab" on a playlist in the library opens it in a tab that works both ways -
+what you change there goes to the server, and what was changed on another device comes back. The
+server's internet radio stations are under "Radio", "Share" copies a public link, and "Links" lists
+them. The plugin's page shows the library scan and, for an admin, starts one. "Automatic" quality is
+the default now and saves data on a phone's hotspot and in Low Data Mode, and a dropped connection
+no longer ends the track: the player waits a minute and goes on from the same spot.
 
 ## projectM
 
