@@ -15,7 +15,7 @@
   &nbsp;&middot;&nbsp;
   <a href="#первый-запуск">Первый запуск</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/gewisser/RGMP-releases/issues/new/choose">Сообщить о проблеме</a>
+  <a href="https://forum.rgmp.app/new-topic?category=rgmp/bugs">Сообщить о проблеме</a>
 </p>
 
 <p align="center">
@@ -217,12 +217,16 @@ xattr -dr com.apple.quarantine /Applications/RGMP.app
 
 ## Сообщить о проблеме
 
-Откройте [issue](https://github.com/gewisser/RGMP-releases/issues/new/choose) и выберите
-подходящую форму. Окно "О приложении RGMP", первый пункт меню RGMP, показывает версию, Mac и
-строку macOS, которые просит форма, и их можно скопировать оттуда.
+Ошибки, вопросы и предложения - на [форум](https://forum.rgmp.app). В RGMP пункт меню Справка ->
+Сообщить о проблеме открывает там [сообщение об ошибке](https://forum.rgmp.app/new-topic?category=rgmp/bugs),
+где версия, macOS и Mac уже заполнены, а журнал показывает в Finder - его остаётся перетащить в
+форму. Иначе их показывает окно "О приложении RGMP", первый пункт
+меню RGMP, и их можно скопировать оттуда.
 
 Журнал лежит в `~/Library/Application Support/gewisser.rgmp/Logs/RGMP.log`. Если приложить его к
 сообщению об ошибке, обычно не придётся отвечать на лишние вопросы.
+
+Если удобнее GitHub, [issues](https://github.com/gewisser/RGMP-releases/issues/new/choose) тоже читаются.
 
 ---
 

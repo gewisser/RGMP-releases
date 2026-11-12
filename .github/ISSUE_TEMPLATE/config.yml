@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Report on the forum
+    url: https://forum.rgmp.app/new-topic?category=rgmp/bugs
+    about: Bug reports, questions and suggestions live on forum.rgmp.app. In RGMP, Help -> Report a Problem opens this form with the version, macOS and the Mac already filled in, and shows the log in Finder.
   - name: RGMP will not open the first time
     url: https://github.com/gewisser/RGMP-releases#the-first-launch
     about: That is expected for a build that is not notarized. The README says how to open it anyway.

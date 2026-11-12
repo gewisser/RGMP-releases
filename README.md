@@ -15,7 +15,7 @@
   &nbsp;&middot;&nbsp;
   <a href="#the-first-launch">First launch</a>
   &nbsp;&middot;&nbsp;
-  <a href="https://github.com/gewisser/RGMP-releases/issues/new/choose">Report a problem</a>
+  <a href="https://forum.rgmp.app/new-topic?category=rgmp/bugs">Report a problem</a>
 </p>
 
 <p align="center">
@@ -217,12 +217,16 @@ same settings pane switches between the two.
 
 ## Reporting a problem
 
-Open an [issue](https://github.com/gewisser/RGMP-releases/issues/new/choose) and pick the form that
-fits. The About RGMP window, the first item of the RGMP menu, shows the version, the Mac and the
-macOS line a bug report asks for, and they can be copied from there.
+Bug reports, questions and suggestions go to the [forum](https://forum.rgmp.app). In RGMP, Help ->
+Report a Problem opens a [bug report](https://forum.rgmp.app/new-topic?category=rgmp/bugs) there with
+the version, macOS and the Mac already filled in, and shows the log in Finder, ready to be dragged
+into it. Otherwise the About RGMP window, the first item of
+the RGMP menu, shows all three, and they can be copied from there.
 
 The log is at `~/Library/Application Support/gewisser.rgmp/Logs/RGMP.log`. Attaching it to a bug
 report usually saves a round of questions.
+
+If you would rather stay on GitHub, [issues](https://github.com/gewisser/RGMP-releases/issues/new/choose) are read as well.
 
 ---
 
