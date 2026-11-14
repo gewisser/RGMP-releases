@@ -17,6 +17,109 @@
         <description>Updates for RGMP, a music player for macOS.</description>
         <language>en</language>
         <item>
+            <title>Version 2.5</title>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>2.5</sparkle:shortVersionString>
+            <sparkle:channel>beta</sparkle:channel>
+            <pubDate>Sat, 14 Nov 2026 18:39:27 +0300</pubDate>
+            <description xml:lang="en" sparkle:format="markdown">- added: the **Help** menu - the website, the forum and "**Report a Problem**", which opens a form on the **forum** with the version, macOS and the Mac already filled in, and shows the log in Finder so it can be dragged into the form; the "About RGMP" window links to the forum and the website;
+- added: **VST® 3 scanning when you want it** - in "*Plugins*" - "*All*" and "*DSP*", under the list, there's a "***Scan VST3 automatically***" checkbox (off by default) and "*Scan Now*". While the box is unticked, the player doesn't load new VST3 plugins by itself: the ones already read stay in the list, and new ones show up after "*Scan Now*" or "*Install*";
+- added: after a fresh install all AudioUnit and VST3 effects are off, the effects built into macOS too, and a new plugin waits for its checkbox - the ones you need are switched on in "*Plugins*" - "*DSP*". If you're updating the player, your checkboxes stay as they were;
+- added: the anonymous statistics now say which VST3 plugin couldn't be read and why (it crashed, hung or refused), by its name: that shows whether something of the player's own gets in the way of reading the plugin;
+- added: **volume with the mouse wheel over the menu bar icon** - hover over the player's icon in the menu bar and turn the wheel: the volume changes by the step from "*Controls*" - "*Change the volume by*", and its level shows under the icon for a second. It's turned off with a checkbox in "*General*" - "*Menu Bar*";
+- added: **the length of the fade when seeking** - in "*Crossfading*" - "*Fades*", next to the "*Fade the sound when seeking within a file*" checkbox, there's now a field in milliseconds, from 20 to 1000, 220 by default;
+- fixed: stations from the "*Radio*" tab stayed on screen in the library's thumbnails after going back to the "*Local files*" tab when no folder had been added to it yet;
+- fixed: reading VST3 plugins no longer brings up a second player icon in the Dock or windows saying RGMP quit unexpectedly. A plugin that crashed or hung while being read is still marked "*could not be read*", and the log now has a line with its name and the reason;
+- fixed: the buttons in the settings and in the tag editor now look the same - an orange label on a dark background; the button with the ellipsis next to the output device picker is no longer squashed, and "*Install*" next to a plugin from the catalogue now looks like a button;
+- fixed: the player could crash a second after launch if an AudioUnit effect turned up in it that doesn't say where its file is. Now such an effect shows in "*Plugins*", just without a description, "*Show in Finder*" or removal, and the log names it;
+- fixed: MP3 files with extra data written before the sound - what's left of a broken tag, zeros or junk - now open. Before, the player said "*File cannot be played*" on such files;
+- fixed: when an AI assistant created a tab and straight away closed the tabs to its left, the tab strip could stay shifted, with the first tab starting right at the window's edge and its name cut off. Now the strip goes back into place by itself;
+- fixed: the "*Install on Quit*" button in the update window is no longer labelled in English when the player is set to Russian or French;
+- fixed: **seeking on the waveform without a gap** - after a click on the waveform the new spot is heard at once and rises to full volume within a fraction of a second; before, the sound came back noticeably later, and while the mouse button was held down there was none at all. When dragging, the sound stays quiet while the pointer moves and comes up as soon as the hand stops;
+- fixed: with "*Fade the sound when seeking within a file*" off, seeking back during the fade at the end of a track no longer leaves the rest of the track almost silent.
+
+![VST Compatible](https://gewisser.github.io/RGMP-releases/images/vst-compatible.svg)
+
+VST is a registered trademark of Steinberg Media Technologies GmbH.</description>
+            <description xml:lang="de" sparkle:format="markdown">- neu: das Menü **Hilfe** - die Website, das Forum und "**Problem melden**", das im **Forum** ein Formular öffnet, in dem Version, macOS und Mac schon eingetragen sind, und das Protokoll im Finder zeigt, damit man es ins Formular ziehen kann; das Fenster "Über RGMP" führt zum Forum und zur Website;
+- neu: **VST® 3 nur scannen, wenn man will** - unter "*Plug-ins*" - "*Alle*" und "*DSP*" gibt es unter der Liste das Kästchen "***VST3 automatisch scannen***" (standardmäßig aus) und "*Jetzt scannen*". Solange das Kästchen leer ist, lädt der Player neue VST3-Plugins nicht von selbst: die schon gelesenen bleiben in der Liste, neue erscheinen nach "*Jetzt scannen*" oder "*Installieren*";
+- neu: nach der ersten Installation sind alle AudioUnit- und VST3-Effekte aus, die in macOS eingebauten auch, und ein neues Plugin wartet auf sein Häkchen - die gewünschten schaltet man unter "*Plug-ins*" - "*DSP*" ein. Wer den Player aktualisiert, behält seine Häkchen, wie sie waren;
+- neu: die anonyme Statistik sagt jetzt, welches VST3-Plugin nicht gelesen werden konnte und warum (abgestürzt, hängen geblieben oder verweigert), mit seinem Namen: so sieht man, ob etwas vom Player selbst das Lesen des Plugins stört;
+- neu: **Lautstärke mit dem Mausrad über dem Symbol in der Menüleiste** - den Zeiger auf das Symbol des Players in der Menüleiste stellen und am Rad drehen: die Lautstärke ändert sich um den Schritt aus "*Steuerung*" - "*Lautstärke ändern um*", und unter dem Symbol erscheint für eine Sekunde ihr Pegel. Ausgeschaltet wird das mit einem Kästchen unter "*Allgemein*" - "*Menüleiste*";
+- neu: **die Dauer der Blende beim Spulen** - unter "*Überblendung*" - "*Blenden*" steht neben dem Kästchen "*Ton beim Navigieren in der Datei blenden*" jetzt ein Feld in Millisekunden, von 20 bis 1000, standardmäßig 220;
+- behoben: Sender aus dem Tab "*Radio*" blieben in den Miniaturen der Mediathek auf dem Bildschirm, nachdem man zum Tab "*Lokale Dateien*" zurückgekehrt war, solange dort noch kein Ordner hinzugefügt war;
+- behoben: beim Lesen von VST3-Plugins erscheint im Dock kein zweites Symbol des Players mehr, und es tauchen keine Fenster mehr auf, dass RGMP unerwartet beendet wurde. Ein Plugin, das beim Lesen abgestürzt oder hängen geblieben ist, wird weiterhin als "*konnte nicht gelesen werden*" markiert, und im Protokoll steht jetzt eine Zeile mit seinem Namen und dem Grund;
+- behoben: die Tasten in den Einstellungen und im Tag-Editor sehen jetzt gleich aus - orange Schrift auf dunklem Grund; die Taste mit den drei Punkten neben der Auswahl des Ausgabegeräts ist nicht mehr gestaucht, und "*Installieren*" bei einem Plugin aus dem Katalog sieht jetzt wie eine Taste aus;
+- behoben: der Player konnte eine Sekunde nach dem Start abstürzen, wenn in ihm ein AudioUnit-Effekt auftauchte, der nicht sagt, wo seine Datei liegt. Jetzt ist so ein Effekt unter "*Plug-ins*" zu sehen, nur ohne Beschreibung, "*Im Finder zeigen*" und Entfernen, und das Protokoll nennt ihn;
+- behoben: MP3-Dateien öffnen sich jetzt auch dann, wenn vor dem Ton zusätzliche Daten stehen - der Rest eines kaputten Tags, Nullen oder Datenmüll. Vorher meldete der Player bei solchen Dateien "*Datei nicht abspielbar*";
+- behoben: wenn ein KI-Assistent einen Tab anlegte und gleich danach die Tabs links davon schloss, konnte die Tableiste verschoben bleiben, und der erste Tab begann direkt am Fensterrand mit abgeschnittenem Namen. Jetzt rückt die Leiste von selbst an ihren Platz zurück;
+- behoben: die Taste "*Install on Quit*" im Update-Fenster ist nicht mehr englisch beschriftet, wenn der Player auf Russisch oder Französisch eingestellt ist;
+- behoben: **Spulen auf der Wellenform ohne Lücke** - nach einem Klick auf die Wellenform hört man die neue Stelle sofort, und sie steigt in Bruchteilen einer Sekunde auf volle Lautstärke; vorher kam der Ton merklich später zurück, und solange die Maustaste gedrückt war, gar nicht. Beim Ziehen schweigt der Ton, solange sich der Zeiger bewegt, und kommt, sobald die Hand stillsteht;
+- behoben: bei ausgeschaltetem "*Ton beim Navigieren in der Datei blenden*" lässt das Zurückspulen während der Blende am Ende eines Titels den Rest des Titels nicht mehr fast stumm.
+
+![VST Compatible](https://gewisser.github.io/RGMP-releases/images/vst-compatible.svg)
+
+VST is a registered trademark of Steinberg Media Technologies GmbH.</description>
+            <description xml:lang="fr" sparkle:format="markdown">- ajouté : le menu **Aide** - le site, le forum et "**Signaler un problème**", qui ouvre sur le **forum** un formulaire où la version, macOS et le Mac sont déjà remplis, et montre le journal dans le Finder pour qu'on puisse le glisser dans le formulaire ; la fenêtre "À propos de RGMP" mène au forum et au site ;
+- ajouté : **l'analyse des VST® 3 quand on le veut** - dans "*Plug-ins*" - "*Tous*" et "*DSP*", sous la liste, il y a une case "***Analyser les VST3 automatiquement***" (décochée par défaut) et "*Analyser maintenant*". Tant que la case est décochée, le lecteur ne charge pas de lui-même les nouveaux plug-ins VST3 : ceux déjà lus restent dans la liste, les nouveaux apparaissent après "*Analyser maintenant*" ou "*Installer*" ;
+- ajouté : après la première installation, tous les effets AudioUnit et VST3 sont désactivés, les effets intégrés à macOS aussi, et un nouveau plug-in attend qu'on le coche - ceux dont on a besoin s'activent dans "*Plug-ins*" - "*DSP*". Pour ceux qui mettent le lecteur à jour, les cases restent comme elles étaient ;
+- ajouté : les statistiques anonymes disent maintenant quel plug-in VST3 n'a pas pu être lu et pourquoi (il a planté, s'est bloqué ou a refusé), par son nom : on voit ainsi si quelque chose du lecteur lui-même empêche de lire le plug-in ;
+- ajouté : **le volume à la molette au-dessus de l'icône de la barre des menus** - placez le pointeur sur l'icône du lecteur dans la barre des menus et tournez la molette : le volume change du pas réglé dans "*Commandes*" - "*Modifier le volume de*", et son niveau s'affiche une seconde sous l'icône. Ça se désactive avec une case dans "*Général*" - "*Barre des menus*" ;
+- ajouté : **la durée du fondu pendant la navigation** - dans "*Fondu enchaîné*" - "*Fondus*", à côté de la case "*Fondu du son lors de la navigation dans le fichier*", il y a maintenant un champ en millisecondes, de 20 à 1000, 220 par défaut ;
+- corrigé : dans les vignettes de la bibliothèque, les stations de l'onglet "*Radio*" restaient à l'écran après le retour à l'onglet "*Fichiers locaux*" quand aucun dossier n'y avait encore été ajouté ;
+- corrigé : la lecture des plug-ins VST3 ne fait plus apparaître une deuxième icône du lecteur dans le Dock ni de fenêtres disant que RGMP s'est arrêté de manière inattendue. Un plug-in qui a planté ou s'est bloqué pendant la lecture est toujours marqué "*illisible*", et le journal a maintenant une ligne avec son nom et la raison ;
+- corrigé : les boutons des réglages et de l'éditeur de tags ont maintenant tous le même aspect - un libellé orange sur un fond sombre ; le bouton à points de suspension à côté du choix du périphérique de sortie n'est plus écrasé, et "*Installer*" à côté d'un plug-in du catalogue ressemble maintenant à un bouton ;
+- corrigé : le lecteur pouvait planter une seconde après le lancement si y apparaissait un effet AudioUnit qui ne dit pas où se trouve son fichier. Maintenant un tel effet est visible dans "*Plug-ins*", simplement sans description, sans "*Afficher dans le Finder*" et sans suppression, et le journal le nomme ;
+- corrigé : les MP3 qui ont des données en trop avant le son - le reste d'un tag abîmé, des zéros ou des octets parasites - s'ouvrent maintenant. Avant, le lecteur affichait "*Fichier illisible*" pour ces fichiers ;
+- corrigé : quand un assistant IA créait un onglet et fermait aussitôt les onglets à sa gauche, la barre d'onglets pouvait rester décalée, et le premier onglet commençait tout au bord de la fenêtre, son nom coupé. Maintenant la barre revient d'elle-même à sa place ;
+- corrigé : dans la fenêtre de mise à jour, le bouton "*Installer à la fermeture*" n'est plus écrit en anglais quand le lecteur est en russe ou en français ;
+- corrigé : **la navigation sur la forme d'onde sans trou** - après un clic sur la forme d'onde, le nouvel endroit s'entend tout de suite et remonte au plein volume en une fraction de seconde ; avant, le son revenait nettement plus tard, et tant que le bouton de la souris restait enfoncé, il n'y en avait pas du tout. Quand on fait glisser, le son se tait tant que le pointeur bouge et revient dès que la main s'arrête ;
+- corrigé : avec "*Fondu du son lors de la navigation dans le fichier*" désactivé, revenir en arrière pendant le fondu de fin d'un morceau ne laisse plus le reste du morceau presque muet.
+
+![VST Compatible](https://gewisser.github.io/RGMP-releases/images/vst-compatible.svg)
+
+VST is a registered trademark of Steinberg Media Technologies GmbH.</description>
+            <description xml:lang="ja" sparkle:format="markdown">- 追加: **ヘルプ** メニュー - サイト、フォーラム、"**問題を報告**"。"問題を報告" は**フォーラム**で、バージョン、macOS、Mac が入力済みのフォームを開き、ログを Finder で表示するので、それをフォームにドラッグできる。"RGMPについて" ウインドウからもフォーラムとサイトに行ける
+- 追加: **VST® 3 のスキャンは必要なときだけ** - "*プラグイン*" の "*すべて*" と "*DSP*" で、リストの下に "***VST3 を自動でスキャン***" チェックボックス (デフォルトはオフ) と "*今すぐスキャン*" がある。チェックが外れている間、プレーヤーは新しい VST3 プラグインを自分では読み込まない。読み込み済みのものはリストに残り、新しいものは "*今すぐスキャン*" か "*インストール*" のあとに現れる
+- 追加: 初めてインストールしたときは AudioUnit と VST3 のエフェクトがすべてオフで、macOS 内蔵のエフェクトもオフ。新しいプラグインはチェックを入れるまで待つ。必要なものは "*プラグイン*" の "*DSP*" でオンにする。プレーヤーをアップデートした場合、チェックはそのまま残る
+- 追加: 匿名の統計に、どの VST3 プラグインが読み込めなかったか、その理由 (クラッシュ、フリーズ、拒否) がプラグイン名つきで入るようになった。プレーヤー側の何かがプラグインの読み込みを邪魔していないかがわかる
+- 追加: **メニューバーのアイコンの上でマウスホイールを回して音量を変える** - メニューバーのプレーヤーのアイコンにポインタを合わせてホイールを回すと、"*操作*" の "*音量の変化量*" の分だけ音量が変わり、アイコンの下に 1 秒間レベルが表示される。"*一般*" の "*メニューバー*" のチェックボックスでオフにできる
+- 追加: **シーク時のフェードの長さ** - "*クロスフェード*" の "*フェード*" で、"*ファイル内の移動時に音をフェード*" チェックボックスの隣にミリ秒の欄ができた。20 から 1000 まで、デフォルトは 220
+- 修正: まだフォルダを 1 つも追加していない "*ローカルファイル*" タブに戻ると、"*ラジオ*" タブの局がライブラリのサムネイルに残ったままになっていた
+- 修正: VST3 プラグインの読み込み中に、Dock に 2 つ目のプレーヤーのアイコンが出たり、RGMP が予期せず終了したというウインドウが出たりしなくなった。読み込み中にクラッシュしたりフリーズしたりしたプラグインは今までどおり "*読み込めませんでした*" と表示され、ログにはその名前と理由の行が残るようになった
+- 修正: 設定とタグエディタのボタンの見た目がそろった - 暗い背景にオレンジの文字。出力デバイスの選択の横にある三点リーダーのボタンがつぶれなくなり、カタログのプラグインの "*インストール*" もボタンらしく見えるようになった
+- 修正: ファイルの場所を知らせない AudioUnit エフェクトがあると、プレーヤーが起動の 1 秒後にクラッシュすることがあった。今はそういうエフェクトも "*プラグイン*" に表示される。ただし説明、"*Finder に表示*"、削除はない。ログにはその名前が出る
+- 修正: 音の前に余分なデータ (壊れたタグの残り、ゼロ、ゴミ) がある MP3 が開けるようになった。以前はこうしたファイルで "*ファイルを再生できません*" と表示されていた
+- 修正: AI アシスタントがタブを作ってすぐにその左のタブを閉じると、タブバーがずれたままになり、最初のタブがウインドウの端ぎりぎりから始まって名前が切れることがあった。今はタブバーが自分で元の位置に戻る
+- 修正: プレーヤーをロシア語かフランス語にしているとき、アップデートウインドウの "*Install on Quit*" ボタンが英語のままになっていた
+- 修正: **波形でのシークで音が途切れない** - 波形をクリックすると新しい位置の音がすぐに聞こえ、一瞬でフル音量まで上がる。以前は音が戻るのがはっきり遅く、マウスボタンを押している間はまったく鳴らなかった。ドラッグ中はポインタが動いている間だけ音が止まり、手を止めるとすぐに戻る
+- 修正: "*ファイル内の移動時に音をフェード*" がオフのとき、曲の終わりのフェード中に後ろへシークすると、曲の残りがほとんど聞こえなくなっていた
+
+![VST Compatible](https://gewisser.github.io/RGMP-releases/images/vst-compatible.svg)
+
+VST is a registered trademark of Steinberg Media Technologies GmbH.</description>
+            <description xml:lang="ru" sparkle:format="markdown">- добавлено: меню **Справка** - сайт, форум и "**Сообщить о проблеме**", которое открывает на **форуме** форму с уже заполненными версией, macOS и Mac и показывает журнал в Finder, чтобы его можно было перетащить в форму; окно "О приложении" ведёт на форум и сайт;
+- добавлено: **сканирование VST® 3 по желанию** - в "*Плагины*" - "*Все*" и "*DSP*" под списком флажок "***Сканировать VST3 автоматически***" (по умолчанию выключен) и "*Сканировать сейчас*". Пока флажок снят, плеер сам не загружает новые плагины VST3: уже прочитанные остаются в списке, новые появляются после "*Сканировать сейчас*" или "*Установить*";
+- добавлено: после первой установки все эффекты AudioUnit и VST3 выключены, встроенные эффекты macOS тоже, и новый плагин ждёт своей галочки - нужные включаются в "*Плагины*" - "*DSP*". У тех, кто обновляет плеер, галочки остаются как были;
+- добавлено: в анонимной статистике - какой плагин VST3 не удалось прочитать и почему (упал, завис или отказался), по его названию: так видно, не мешает ли плееру прочитать плагин что-то своё;
+- добавлено: **громкость колесом мыши над иконкой в строке меню** - наведите курсор на иконку плеера в строке меню и крутите колесо: громкость меняется на шаг из "*Управление*" - "*Изменять громкость на*", а под иконкой на секунду появляется её уровень. Выключается флажком в "*Общие*" - "*Строка меню*";
+- добавлено: **длительность затухания при перемотке** - в "*Сведение*" - "*Затухания*" рядом с флажком "*Затухание звука при навигации по файлу*" появилось поле в миллисекундах, от 20 до 1000, по умолчанию 220;
+- исправлено: на миниатюрах фонотеки станции с вкладки "*Радио*" оставались на экране после возврата на вкладку "*Локальные файлы*", в которую ещё не добавлено ни одной папки;
+- исправлено: при чтении плагинов VST3 в Dock больше не появляется вторая иконка плеера и не выскакивают окна о том, что RGMP неожиданно завершил работу. Плагин, который упал или завис при чтении, по-прежнему помечается "*не удалось прочитать*", а в журнале теперь есть строка с его именем и причиной;
+- исправлено: кнопки в настройках и в редакторе тегов теперь одного вида - оранжевая надпись на тёмной подложке; кнопка с многоточием рядом с выбором устройства вывода больше не сплюснута, а "*Установить*" у плагина из каталога теперь выглядит кнопкой;
+- исправлено: плеер мог упасть через секунду после запуска, если в нём появлялся эффект AudioUnit, который не говорит, где лежит его файл. Теперь такой эффект виден в "*Плагины*", только без описания, "*Показать в Finder*" и удаления, а журнал называет его;
+- исправлено: открываются MP3, у которых перед звуком записаны лишние данные - остаток испорченного тега, нули или мусор. Раньше на таких файлах плеер писал "*Файл не открывается*";
+- исправлено: когда ИИ-ассистент создавал вкладку и сразу закрывал вкладки слева от неё, полоса вкладок могла остаться сдвинутой, и первая вкладка начиналась у самого края окна с обрезанным названием. Теперь полоса возвращается на место сама;
+- исправлено: в окне обновления кнопка "*Установить при выходе*" больше не подписана по-английски, когда плеер говорит по-русски или по-французски;
+- исправлено: **перемотка по волне без паузы** - после щелчка по волне новое место слышно сразу и за доли секунды поднимается до полной громкости; раньше звук возвращался заметно позже, а пока кнопка мыши нажата, его не было вовсе. При протяжке звук молчит, пока курсор движется, и поднимается, как только рука остановилась;
+- исправлено: при выключенном "*Затухании звука при навигации по файлу*" перемотка назад во время затухания в конце трека больше не оставляет остаток трека почти беззвучным.
+
+![VST Compatible](https://gewisser.github.io/RGMP-releases/images/vst-compatible.svg)
+
+VST is a registered trademark of Steinberg Media Technologies GmbH.</description>
+            <enclosure url="https://github.com/gewisser/RGMP-releases/releases/download/v2.5/RGMP-2.5.zip" length="21783923" type="application/octet-stream" sparkle:edSignature="dkBfnclLQP0Oh960nyANCK305adHAiiT02QOcuCPJgJOcMJneqIRofUikgBTgG8u0dSjz2AchtGLRF3JXwvKAA==" />
+        </item>
+        <item>
             <title>Version 2.4</title>
             <sparkle:version>11</sparkle:version>
             <sparkle:shortVersionString>2.4</sparkle:shortVersionString>
