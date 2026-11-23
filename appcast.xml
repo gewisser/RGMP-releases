@@ -17,6 +17,73 @@
         <description>Updates for RGMP, a music player for macOS.</description>
         <language>en</language>
         <item>
+            <title>Version 2.6</title>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>2.6</sparkle:shortVersionString>
+            <pubDate>Mon, 23 Nov 2026 21:15:07 +0300</pubDate>
+            <description xml:lang="en" sparkle:format="markdown">The first stable version. To get it out stable, almost nothing new went into it - it's mostly fixes.
+
+Since 2.5:
+
+- added: [**support for the project**](https://rgmp.app/donate) - "Support the Project" in the **Help** menu and a button in the "About RGMP" window open the donations page on the website, in the player's language;
+- added: **a new player icon** - the logo has been redrawn from scratch and is sharp at any size: in the Dock, in Finder, in the "About RGMP" window, in place of a missing cover and in the menu bar. If macOS is set to the dark, clear or tinted icon style, the player's icon now changes along with the rest;
+- fixed: in the library's thumbnails, while a list was loading - when searching for a station on the "*Radio*" tab, say - an empty thumbnail with no name showed up under the loading indicator, and at the end of a long list one like it stood where the next ones would go;
+- fixed: the stars in a playlist row could stay lit after the pointer passed over them - quickly, or smoothly from left to right - and went out only when the playlist was switched or the pointer passed again. Now they're lit only while the pointer is over them;
+- fixed: in a window stretched across the whole width of a large display, a station's waveform stopped reaching the left edge of the bar after about a minute and a half on air - a flat line was left on the left. Now the waveform reaches the edge at any window width and any scale;
+- fixed: for tracks from Yandex Music and YouTube the waveform was never drawn to the end, stopping somewhere different on every play, and the loudness of such a track wasn't measured. Now the waveform is built whole, as for a file on disk, and the loudness measurement and "*Silence removal*" work with it again.
+
+If you installed test versions, the player will keep offering them. To get only stable ones, choose "*released versions*" for "*Update to*" in the settings, in "*Player*" - "*Updates*".</description>
+            <description xml:lang="de" sparkle:format="markdown">Die erste stabile Version. Damit sie stabil wird, kam kaum Neues hinein - es sind vor allem Korrekturen.
+
+Seit 2.5:
+
+- neu: [**das Projekt unterstützen**](https://rgmp.app/de/donate) - "Projekt unterstützen" im Menü **Hilfe** und eine Schaltfläche im Fenster "Über RGMP" öffnen die Spendenseite auf der Website, in der Sprache des Players;
+- neu: **ein neues Symbol des Players** - das Logo wurde neu gezeichnet und ist in jeder Größe scharf: im Dock, im Finder, im Fenster "Über RGMP", anstelle eines fehlenden Covers und in der Menüleiste. Ist in macOS der dunkle, klare oder getönte Symbolstil eingestellt, ändert sich das Symbol des Players jetzt mit den anderen;
+- behoben: in den Miniaturen der Mediathek erschien, während eine Liste lud - etwa bei der Suche nach einem Sender im Tab "*Radio*" -, unter der Ladeanzeige eine leere Miniatur ohne Namen, und am Ende einer langen Liste stand so eine an der Stelle der nächsten;
+- behoben: die Sterne in einer Zeile der Wiedergabeliste konnten leuchten bleiben, nachdem der Zeiger darüber gefahren war - schnell oder langsam von links nach rechts -, und erloschen erst beim Wechsel der Wiedergabeliste oder wenn der Zeiger erneut darüberfuhr. Jetzt leuchten sie nur, solange der Zeiger über ihnen ist;
+- behoben: in einem Fenster, das über die ganze Breite eines großen Bildschirms gezogen war, reichte die Wellenform eines Senders nach etwa anderthalb Minuten Sendung nicht mehr bis an den linken Rand der Leiste - links blieb eine flache Linie. Jetzt reicht die Wellenform bei jeder Fensterbreite und jeder Skalierung bis an den Rand;
+- behoben: bei Titeln aus Yandex Music und YouTube wurde die Wellenform nicht zu Ende gezeichnet, bei jedem Abspielen an einer anderen Stelle, und die Lautheit eines solchen Titels wurde nicht gemessen. Jetzt entsteht die Wellenform ganz, wie bei einer Datei auf der Festplatte, und die Lautheitsmessung und "*Entfernen von Stille*" funktionieren wieder damit.
+
+Wer Testversionen installiert hat, bekommt sie vom Player weiter angeboten. Um nur stabile zu bekommen, in den Einstellungen unter "*Player*" - "*Aktualisierungen*" bei "*Aktualisieren auf*" die Option "*veröffentlichte Versionen*" wählen.</description>
+            <description xml:lang="fr" sparkle:format="markdown">La première version stable. Pour qu'elle sorte stable, presque rien de nouveau n'y est entré - ce sont surtout des corrections.
+
+Depuis la 2.5 :
+
+- ajouté : [**le soutien au projet**](https://rgmp.app/fr/donate) - "Soutenir le projet" dans le menu **Aide** et un bouton dans la fenêtre "À propos de RGMP" ouvrent la page des dons sur le site, dans la langue du lecteur ;
+- ajouté : **une nouvelle icône du lecteur** - le logo a été redessiné et reste net à toutes les tailles : dans le Dock, dans le Finder, dans la fenêtre "À propos de RGMP", à la place d'une pochette absente et dans la barre des menus. Si macOS utilise le style d'icônes sombre, transparent ou teinté, l'icône du lecteur change désormais avec les autres ;
+- corrigé : dans les vignettes de la bibliothèque, pendant le chargement d'une liste - en cherchant une station dans l'onglet "*Radio*", par exemple -, une vignette vide sans nom apparaissait sous l'indicateur de chargement, et à la fin d'une longue liste une autre pareille tenait la place des suivantes ;
+- corrigé : les étoiles d'une ligne de la liste de lecture pouvaient rester allumées après le passage du pointeur - rapide, ou lent de gauche à droite - et ne s'éteignaient qu'en changeant de liste de lecture ou à un nouveau passage du pointeur. Elles ne s'allument plus que tant que le pointeur est dessus ;
+- corrigé : dans une fenêtre étirée sur toute la largeur d'un grand écran, la forme d'onde d'une station cessait d'atteindre le bord gauche de la barre au bout d'environ une minute et demie d'écoute - il restait une ligne plate à gauche. La forme d'onde va maintenant jusqu'au bord, quelles que soient la largeur de la fenêtre et l'échelle ;
+- corrigé : pour les morceaux de Yandex Music et de YouTube, la forme d'onde ne se dessinait pas jusqu'au bout, et s'arrêtait ailleurs à chaque lecture, et le volume d'un tel morceau n'était pas mesuré. La forme d'onde se construit maintenant en entier, comme pour un fichier sur le disque, et la mesure du volume et la "*Suppression du silence*" fonctionnent de nouveau avec elle.
+
+Si vous avez installé des versions de test, le lecteur continuera de vous les proposer. Pour ne recevoir que les versions stables, choisissez "*versions stables*" pour "*Mettre à jour vers*" dans les réglages, dans "*Lecteur*" - "*Mises à jour*".</description>
+            <description xml:lang="ja" sparkle:format="markdown">初めての安定版です。安定版として出すために、新しい機能はほとんど入れていません。中身の大半は修正です。
+
+2.5 からの変更:
+
+- 追加: [**プロジェクトの支援**](https://rgmp.app/ja/donate) - **ヘルプ** メニューの "プロジェクトを支援" と "RGMPについて" ウインドウのボタンから、サイトの寄付ページがプレーヤーの言語で開く
+- 追加: **新しいプレーヤーのアイコン** - ロゴを描き直し、どのサイズでもくっきり表示されるようになった。Dock、Finder、"RGMPについて" ウインドウ、カバーがないときの代わりの画像、メニューバーのどこでも。macOS でダーク、クリア、色合いのアイコンスタイルを選んでいると、プレーヤーのアイコンもほかのアイコンと一緒に変わるようになった
+- 修正: ライブラリのサムネイルで、リストの読み込み中 (たとえば "*ラジオ*" タブで局を検索しているとき) に、読み込みインジケータの下に名前のない空のサムネイルが出ていた。長いリストの最後にも、次のものが来る場所に同じものが出ていた
+- 修正: プレイリストの行の星が、ポインタが上を通ったあと (すばやく、または左から右へゆっくり) 点いたままになることがあり、プレイリストを切り替えるか、ポインタがもう一度通るまで消えなかった。ポインタが上にある間だけ点くようになった
+- 修正: 大きな画面の幅いっぱいに広げたウインドウで、ラジオ局の波形が放送開始から 1 分半ほどでバーの左端まで届かなくなり、左側が平らな線のままになっていた。ウインドウの幅や拡大率に関係なく、波形が端まで届くようになった
+- 修正: Yandex Music と YouTube の曲で、波形が最後まで描かれず、再生するたびに違う場所で止まっていた。その曲の音量も測定されていなかった。今はディスク上のファイルと同じように波形が最後まで作られ、音量の測定と "*無音の除去*" もまた使えるようになった
+
+テスト版をインストールしていた場合、プレーヤーは引き続きテスト版も届けます。安定版だけにするには、設定の "*プレーヤー*" の "*アップデート*" で、"*更新対象*" を "*安定版*" にしてください。</description>
+            <description xml:lang="ru" sparkle:format="markdown">Первая стабильная версия. Чтобы она вышла стабильной, новых функций в неё почти не добавляли - в основном это исправления.
+
+С версии 2.5:
+
+- добавлено: [**поддержка проекта**](https://rgmp.app/ru/donate) - пункт "Поддержать проект" в меню **Справка** и кнопка в окне "О приложении" открывают страницу донатов на сайте, на языке плеера;
+- добавлено: **новая иконка плеера** - логотип перерисован заново и стал чётким на любом размере: в Dock, в Finder, в окне "О приложении", на месте обложки и в строке меню. Если в настройках macOS выбран тёмный, прозрачный или тонированный стиль значков, иконка плеера теперь меняется вместе с остальными;
+- исправлено: на миниатюрах фонотеки, пока список загружался - например, при поиске станции на вкладке "*Радио*", - под индикатором загрузки появлялась пустая миниатюра без названия, а в конце длинного списка такая же стояла на месте следующих;
+- исправлено: звёзды в строке плейлиста могли остаться подсвеченными после того, как курсор прошёл над ними - быстро или плавно слева направо, - и гасли только при переключении плейлиста или новом проходе курсора. Теперь они подсвечены, только пока курсор над ними;
+- исправлено: в окне, растянутом на всю ширину большого экрана, волна радиостанции примерно через полторы минуты эфира переставала доходить до левого края полосы - слева оставалась ровная линия. Теперь волна тянется до края при любой ширине окна и любом масштабе;
+- исправлено: у треков из Яндекс Музыки и YouTube волна дорисовывалась не до конца, при каждом запуске по-разному, а громкость такого трека не замерялась. Теперь волна строится целиком, как у файла с диска, и с ней снова работают замер громкости и "*Удаление тишины*".
+
+Если вы ставили тестовые версии, плеер будет предлагать их и дальше. Чтобы получать только стабильные, выберите в настройках, в "*Плеер*" - "*Обновления*", пункт "*Обновляться до*" - "*стабильных версий*".</description>
+            <enclosure url="https://github.com/gewisser/RGMP-releases/releases/download/v2.6/RGMP-2.6.zip" length="22460267" type="application/octet-stream" sparkle:edSignature="bnM39PJRH0UsNxR5OtdbzA8PbRP283q++YqMiJHqB5WGcGyQmD/fIDJ/NiwGDHUsYh/EIjLWWgHHYBmZlmTFCg==" />
+        </item>
+        <item>
             <title>Version 2.5</title>
             <sparkle:version>12</sparkle:version>
             <sparkle:shortVersionString>2.5</sparkle:shortVersionString>
