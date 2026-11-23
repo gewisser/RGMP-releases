@@ -187,6 +187,29 @@
     },
     {
       "id": "gewisser.rgmp.youtube",
+      "version": "1.2",
+      "minPlayer": "2.6",
+      "url": "https://gewisser.github.io/RGMP-releases/plugins/YouTube-1.2.zip",
+      "length": 245873,
+      "edSignature": "+1jDINzoaYS4VvEVsO993EHYt+fvN9kSzNoOKpMr3NXW1RP4gCfb0t3715eomRcjbHaAS3ygGW8loa6kokv0Bg==",
+      "name": {
+        "de": "YouTube Support",
+        "en": "YouTube Support",
+        "fr": "YouTube Support",
+        "ja": "YouTube Support",
+        "ru": "YouTube Support"
+      },
+      "vendor": "RGMP",
+      "summary": {
+        "de": "YouTube-Videos, Playlists und Kanäle per Link - mit Covern und neuen Videos, sobald sie erscheinen",
+        "en": "YouTube videos, playlists and channels by link - with covers, and new videos as they come out",
+        "fr": "Vidéos, playlists et chaînes YouTube par lien - avec pochettes, et les nouvelles vidéos dès leur sortie",
+        "ja": "リンクからYouTubeの動画、プレイリスト、チャンネルを - カバー付きで、新しい動画も公開され次第",
+        "ru": "Видео, плейлисты и каналы YouTube по ссылке - с обложками и новыми видео, как только они выходят"
+      }
+    },
+    {
+      "id": "gewisser.rgmp.youtube",
       "version": "1.1",
       "minPlayer": "1.9",
       "url": "https://gewisser.github.io/RGMP-releases/plugins/YouTube-1.1.zip",
