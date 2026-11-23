@@ -33,7 +33,8 @@ Better to update RGMP first.
 
 ## YouTube Support
 
-[YouTube-1.1.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/YouTube-1.1.zip)
+[YouTube-1.2.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/YouTube-1.2.zip), needs
+RGMP 2.6. On RGMP 1.9 to 2.5 it's [YouTube-1.1.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/YouTube-1.1.zip).
 
 Videos, playlists and channels from YouTube and YouTube Music, by link.
 
@@ -63,7 +64,8 @@ Two things to know:
 
 ## Yandex Music
 
-[YandexMusic-1.5.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/YandexMusic-1.5.zip)
+[YandexMusic-1.6.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/YandexMusic-1.6.zip), needs
+RGMP 2.6. On RGMP 1.9 to 2.5 it's [YandexMusic-1.5.zip](https://github.com/gewisser/RGMP-releases/raw/main/plugins/YandexMusic-1.5.zip).
 
 Tracks, albums and playlists from music.yandex.ru.
 
